@@ -217,6 +217,26 @@ p {
     object-fit: cover;
 }
 
+.hero-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-height: 220px;
+    object-fit: contain;
+    flex: 1;
+    min-width: 160px;
+}
+
 /* About Section */
 .about {
     padding: 80px 0;
@@ -456,5 +476,14 @@ p {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-images img {
+        max-height: 180px;
     }
 }
